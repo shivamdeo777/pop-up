@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <button onclick="myFunction() " class="button">Submit</button>
+      <div class="popup" id="function">
+        <img
+          src="./assets/WhatsApp Image 2024-06-06 at 11.27.20_dfba080d.jpg"
+          alt="tick image" />
+        <h1>Thank you</h1>
+        <p>your detail has been successfully submitted.....THANK YOU!</p>
+        <button class="btn" onclick="RemoveFunction()">OK</button>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("function").classList.add("pop-up");
+      }
+      function RemoveFunction() {
+        document.getElementById("function").classList.remove("pop-up");
+      }
+    </script>
+  </body>
 </html>
